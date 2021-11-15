@@ -1,0 +1,27 @@
+// import reset stlyes
+@import './config/reset';
+
+* {
+    box-sizing: border-box
+}
+
+// import mixins
+@import './config/mixins';
+
+// import fonts
+// font-family: 'Forum', cursive;
+// font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+// import components
+@import '../scss/config/wrap';
+@import '../scss/components/header';
+@import '../scss/components/welcome';
+@import '../scss/components/virtualTour';
+@import '../scss/components/pictureExplore';
+@import '../scss/components/gallery';
+@import '../scss/components/tickets';
+@import '../scss/components/parallax';
+@import '../scss/components/contacts';
+@import '../scss/components/footer';
+

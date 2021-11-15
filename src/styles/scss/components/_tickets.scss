@@ -1,0 +1,158 @@
+.tickets-container {
+    margin-top: 75px;
+    display: flex;
+
+    .buy-form {
+        width: 50%;
+        margin-left: 57px;
+        display: flex;
+        justify-content: space-between;
+
+        .buy-form-container {
+            display: flex;
+            flex-direction: column;
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+
+                .input-group__label--ticlet-type {
+                    margin-bottom: 25px;
+                }
+
+                .input-group__label {
+                    display: block;
+                    position: relative;
+
+                    .input-group__text {
+                        margin-left: 43px;
+                    }
+
+                    .input-group__text--counter {
+                        margin: 10px 0px 15px 0px;
+                    }
+
+                    .input-group__text--counter,
+                    .input-group__text {
+                        @include roboto-text;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 26px;
+                    }
+
+                    &:hover input ~ .checkmark {
+                        background-color: #c3c3c3;
+                    }
+
+                    &:hover input:checked ~ .checkmark {
+                        background-color: #949494;
+                    }
+
+                    & input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+
+                    & .checkmark:after {
+                        top: 3px;
+                        left: 3px;
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background: rgb(0, 0, 0);
+                    }
+
+                    .input-group__input {
+                        outline: none;
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                        height: 17px;
+                        width: 17px;
+                        border: 2px solid black;
+                        border-radius: 50%;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+    .counter-container {
+        width: 150px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        border: 3px solid #000000;
+
+        .btn-info {
+            width: 25%;
+            border: none;
+        }
+
+        .down_count {
+            background: url(../../assets/img/icons/minus-icon.svg) no-repeat center;
+        }
+
+        .up_count {
+            background: url(../../assets/img/icons/plus-icon.svg) no-repeat center;
+        }
+
+        .counter {
+            max-width: 50%;
+            border: none;
+            text-align: center;
+        }
+    }
+
+    .section__subtitle--amount {
+        margin-bottom: 15px;
+    }
+
+    #submit {
+        width: 175px;
+        height: 50px;
+        margin-top: 10px;
+        border: none;
+        background: #000000;
+        @include roboto-text;
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        transition: 0.1s;
+
+        &:hover {
+            color: black;
+            background: #9D8665;
+        }
+    }
+}
+
+.section__subtitle--total {
+    letter-spacing: 1.65px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.buy-form-container--left {
+    align-items: flex-start;
+}
+
+.buy-form-container--right {
+    align-items: flex-end;
+}

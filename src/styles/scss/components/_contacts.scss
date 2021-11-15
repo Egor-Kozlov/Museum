@@ -1,0 +1,33 @@
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+.section__subtitle {
+    max-width: 237px;
+    margin-bottom: 50px;
+    @include roboto-text;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.contacts__item {
+    cursor: pointer;
+    margin-bottom: 25px;
+    @include roboto-text;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+
+    a {
+        display: block;
+        text-decoration: none;
+        @include roboto-text;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}

@@ -1,0 +1,29 @@
+.section--picture-explore {
+    background: #030303;
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .picture-explore-container {
+            max-width: 660px;
+
+            .text-container {
+                margin-top: 75px;
+
+                .picture-explore__text {
+                    margin-bottom: 25px;
+                    @include roboto-text;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 38px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    .section-title--picture-explore {
+        color: white;
+    }
+}

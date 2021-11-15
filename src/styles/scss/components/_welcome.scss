@@ -1,0 +1,132 @@
+#section-welcome {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: black;
+    padding-top: 30px;
+
+    .wrap {
+        height: 842px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(../../assets/img/welcome-slider/1.jpg) no-repeat black;
+        background-position: calc(100% - 20px) 0%;
+        box-shadow: 550px 0px 140px 0px rgb(0, 0, 0) inset; 
+
+        .slider-container {
+            padding-bottom: 33px;
+            display: flex;
+            justify-content: flex-end;
+
+            .slider {
+                margin-right: 20px;
+            }
+        }
+        
+        .section-title__welcome {
+            padding-top: 150px;
+            max-width: 600px;
+            color: #FFFFFF;
+
+            &:after {
+                content: none;
+            }
+        }
+
+        .section-welcome__subtitle {
+            @include roboto-text;
+            margin-top: 27px;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+        }
+
+        .section-welcome__btn {
+            width: 360px;
+            height: 75px;
+            margin-top: 75px;
+            @include roboto-text;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 2px;
+            background: #710707;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            transition: 0.3s;
+
+            &:hover {
+                background: #9D8665;
+            }
+        }
+
+        .slider-counter {
+            @include roboto-text;
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        .slider-arrows {
+            width: 74px;
+            height: 8px;
+            display: flex;
+
+            .slider-arrow__left {
+                width: 50%;
+                height: 100%;
+                cursor: pointer;
+                background: url(../../assets/img/icons/arrow-left.svg) no-repeat center;
+
+                &:hover {
+                    filter: invert(53%) sepia(29%) saturate(389%) hue-rotate(356deg) brightness(95%) contrast(90%)
+                }
+            }
+
+            .slider-arrow__right {
+                width: 50%;
+                height: 100%;
+                cursor: pointer;
+                background: url(../../assets/img/icons/arrow-right.svg) no-repeat center;
+
+                &:hover {
+                    filter: invert(53%) sepia(29%) saturate(389%) hue-rotate(356deg) brightness(95%) contrast(90%)
+                }
+            }
+        }
+
+        .slider {
+            width: 600px;
+            height: 120px;
+            background: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 60px;
+
+            .slider__list {
+                display: flex;
+                width: 191px;
+                justify-content: space-between;
+
+                .slider__item {
+                    width: 19px;
+                    height: 19px;
+                    cursor: pointer;
+                    background: #D2B183;
+
+                    &:hover {
+                        background: #9D8665;;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

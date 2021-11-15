@@ -1,0 +1,35 @@
+@mixin forum-text {
+    font-family: Forum, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@mixin roboto-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 200;
+    color: #000000;
+}
+
+@mixin section-title {
+    font-family: Forum, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+@mixin gold-color {
+    color: #9d8665;
+}
